@@ -1,0 +1,11 @@
+{
+  "name": "nickbot",
+  "version": "1.0.0",
+  "description": "The castle town nickbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
