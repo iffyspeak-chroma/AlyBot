@@ -8,7 +8,8 @@ module.exports = {
 		const command = interaction.client.commands.get(interaction.commandName);
 
 		if (!command) {
-			console.error(`No command matching ${interaction.commandName} was found.`);
+			console.error(`No command matching "${interaction.commandName}" was found.`);
+			interaction.editReply(`This command doesn't exist bot-side. Contact iffyspeak about this issue.`);
 			return;
 		}
 
