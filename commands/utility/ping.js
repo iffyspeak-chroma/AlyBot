@@ -5,6 +5,7 @@ module.exports = {
         .setName('ping')
         .setDescription('Round trip testing utility'),
     async execute(interaction) {
-        await interaction.reply('Pong!')
+        const sent = await interaction.reply({content: `Calculating.`, fetchReply: true});
+        interaction.editReply(`Calculated RTL: ${sent.createdTimestamp - interaction.createdTimestamp}ms`);
     }
 }
