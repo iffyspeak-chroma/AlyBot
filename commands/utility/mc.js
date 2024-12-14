@@ -42,7 +42,7 @@ module.exports = {
         {
             if (interaction.options.getSubcommand() == 'rcon')
             {
-                if (interaction.member.id === 348151645286432779)
+                if (interaction.member.id == interaction.guild.ownerId)
                 {
                     const command = interaction.options.getString('command');
                     const rcon = new Rcon(
